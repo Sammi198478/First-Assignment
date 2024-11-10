@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+   
+   margin: 0;
+   background-attachment: fixed;
+  }
+  
+  
+  .galleryItem img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .galleryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .galleryWrapper {
+    padding: 5% 10%;
+  }
+  
+  .filterItem ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .filterItem ul button {
+    
+    padding: 8px 46px;
+   
+    font-size: 17px;
+    
+  }
+  
+ 
+  
+  .galleryItem img {
+    border-radius: 15px;
+  } */
