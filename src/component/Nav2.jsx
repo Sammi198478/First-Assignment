@@ -9,6 +9,9 @@ function Nav2() {
   const location = useLocation();
   const navigate = useNavigate();
 
+  if(location.pathname === "/newincident/new" || location.pathname === "/newincident/new/item" || location.pathname === "/newincident/new/item/getstart" ){return <Outlet/>}
+  
+
   return (
     <>
     <div className='pt-40 flex justify-between border border-t border-gray-300'>

@@ -13,7 +13,7 @@ function Navbar() {
 <nav className='fixed w-full top-0 left-0 right-0 bg-white shadow'>
     <ul className='max-w-[90vw] flex flex-wrap justify-between items-center mx-auto px-2 sm:px-5 py-2 sm:py-3.5 xl:py-5 text-sm xl:text-base'>
         <div className='flex items-center'>
-            <img className='mr-5 sm:mr-10' src="img/logo.png" alt="Logo" />
+            <img className='mr-5 sm:mr-10' src="/logo.png" alt="Logo" />
             <a href="/dashboard" className='font-semibold text-2xl font-Onest'>Dashboard</a>
         </div>
 
@@ -40,7 +40,7 @@ function Navbar() {
         <div className="flex items-center">
             <a href="#" className="flex items-center gap-2">
                 <FaBell />
-                <img className="flex" src="img/Rectangle 5412.png" alt="User Profile" />
+                <img className="flex" src="/Rectangle 5412.png" alt="User Profile" />
             </a>
             <p className="text-[#A1A1AA] ml-2 hidden sm:block">
                 Usman Zafar<br />

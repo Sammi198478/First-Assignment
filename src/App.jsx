@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nav2 from './component/Nav2';
 import Dashboard from './component/Dashboard';
 import IncidentData from './component/IncidentData';
+import Getstartet from './component/Getstartet';
+import Locations from './component/Locations';
 
 
 
@@ -24,10 +26,9 @@ function App() {
         <Route path='' element={<Nav2/>}>
         <Route path="/newincident" element={<Incidents/>} />
         <Route path="/newincident/new" element={<NewIncident/>} />
-        </Route>
-
-        <Route element={< Nav2/>}>
-        <Route path='/newincident/new/dataitem' element={<IncidentData />} />
+        <Route path='/newincident/new/item' element={<IncidentData />} />
+        <Route path='/newincident/new/item/getstart' element={<Getstartet/>} />
+        <Route path='/newincident/new/item/getstart/locations' element={<Locations/>} />
         </Route>
 
 

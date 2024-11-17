@@ -11,17 +11,18 @@ function Nav3() {
       Home - Incidents - New Incident<br />
         <span className='font-semibold text-2xl font-Onest text-[#09090B]'>New Incident</span>
       </p>
+      
+     
       {
-          location.pathname === "/newincident/new/data" ? (
-            <button onClick={() => navigate("/newincident/new")} className='py-2 px-4 transition-all duration-300 rounded-md border border-gray-300 text-[#A1A1AA]'>
-              Back
-            </button>
-          ) : (
-            <button className='bg-[#F26922] hover:bg-blue-600 py-2 px-4 transition-all duration-300 rounded-md border border-gray-300 text-[#A1A1AA]'>
-             Next step
-            </button>
-          )
+           (
+
+            <button onClick={() => navigate("/newincident/new/item/getstart")} className='py-2 px-4 transition-all duration-300 rounded-md border border-gray-300 text-[#A1A1AA] bg-[#F26922]'>
+            Next step
+          </button>
+          ) 
         }
+
+     
       </div>
       <Outlet/>
     </>

@@ -1,4 +1,4 @@
-
+import Nav3 from './Nav3'
 import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
@@ -6,75 +6,75 @@ import { Outlet } from 'react-router-dom';
 
 const DataItem = [
   {
-    img: "img/Group.png",
+    image: "/Group.png",
     name: "Avalanche",
   },
   {
-    img: "img/fi_9502782.png",
+    image: "/fi_9502782.png",
     name: "Biological",
   },
   {
-    img: "img/Line.png",
+    image: "/Line.png",
     name: "Blizzard",
   },
   {
-    img: "img/Group (1).png",
+    image: "/Group (1).png",
     name: "Cold/Freezing",
   },
   {
-    img: "img/fi_533057.png",
+    image: "/fi_533057.png",
     name: "Drought",
   },
   {
-    img: "img/Vector (1).png",
+    img: "/Vector (1).png",
     name: "Earthquake",
   },
   {
-    img: "img/fi_106063.png",
+    image: "/fi_106063.png",
     name: "Flooding",
   },
   {
-    img: "img/fi_66275.png",
+    image: "/fi_66275.png",
     name: "Heat Wave",
   },
   {
-    img: "img/Icon.png",
+    image: "/Icon.png",
     name: "Hail",
   },
   {
-    img: "img/fi_9502782.png",
+    image: "/fi_9502782.png",
     name: "Lightning",
   },
   {
-    img: "img/Vector (2).png",
+    image: "/Vector (2).png",
     name: "Man Made",
   },
   {
-    img: "img/fi_3496215.png",
+    image: "/fi_3496215.png",
     name: "Mudslide",
   },
   {
-    img: "img/Vector (3).png",
+    image: "/Vector (3).png",
     name: "Severe Storm",
   },
   {
-    img: "img/Vector (3).png",
+    image: "/Vector (3).png",
     name: "Strong Wind",
   },
   {
-    img: "img/fi_3682921.png",
+    image: "/fi_3682921.png",
     name: "Tornado",
   },
   {
-    img: "img/fi_533077.png",
+    image: "/fi_533077.png",
     name: "Tsunami",
   },
   {
-    img: "img/fi_10567288.png",
+    image: "/fi_10567288.png",
     name: "Volcanic Eruption",
   },
   {
-    img: "img/fi_3661746.png",
+    image: "/fi_3661746.png",
     name: "Wildfire",
   },
  
@@ -102,7 +102,7 @@ function IncidentData() {
 
   return (
     <>
-      <SecondaryNav3  />
+      <Nav3  />
       <div className="App mt-10 sm:mt-16 lg:mt-24 px-4">
         <div className="text-center mb-6">
           <h1 className='text-2xl font-semibold mt-2 mb-4'>Which of these best describes the incident?</h1>
@@ -111,8 +111,8 @@ function IncidentData() {
         <div className="grid grid-cols-4 sm:grid-cols-1 lg:grid-cols-3 gap-4">
           {data.map((item) => (
             <div key={item.id} className="border rounded-lg p-4 flex flex-col items-center text-center shadow hover:shadow-lg transition-shadow duration-300">
-              <img src={item.img} alt={item.name} className="mb-2 w-full h-auto rounded" />
-              <h2 className="font-bold text-2xl mb-2">{item.name}</h2>
+              <img src={item.image} alt="" className="mb-2" />
+              <h2 className="font-semibold text-sm mb-2">{item.name}</h2>
             </div>
           ))}
         </div>
@@ -120,7 +120,7 @@ function IncidentData() {
         <div className="mt-6">
           <ul className="flex flex-wrap gap-2 justify-center">
             <li>
-              <button onClick={() => setData(DataItem)} className="bg-blue-500 text-white py-2 px-4 rounded-md transition duration-200">Show All Incidents</button>
+              <button onClick={() => setData(DataItem)} ></button>
             </li>
             {user.map((item, index) => (
               <li key={index}>
@@ -128,6 +128,7 @@ function IncidentData() {
               </li>
             ))}
           </ul>
+      
         </div>
         <Outlet/>
       </div>
